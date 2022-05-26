@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "thanh",
+      "price": 10,
+      "status": true
+    },
+    {
+      "name": "Thành Nguyễn",
+      "price": 17,
+      "status": true,
+      "id": 2
+    },
+    {
+      "name": "Thành nguyễn Tuấn",
+      "price": 10,
+      "status": true,
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of productList; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.status ? "Còn hàng" : "Hết hàng"}}</td>
+            <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}">Edit</button></td>
+            <td><button (click)="onRemove(product.id)" class="btn btn-warning">Remove</button></td>
+            <td><button class="btn btn-primary" routerLink="/product/{{product.id}}">View</button></td>
+            <td><button class="btn btn-primary" routerLink="/product/add">Add</button></td>
+        </tr>
+    </tbody>
+  </table>
